@@ -22,7 +22,7 @@ export async function handlerNotesCreate(
     const { note } = req.body;
     const noteId = uuidv4();
 
-    await createNotes({
+    await createNote({
       id: noteId,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
